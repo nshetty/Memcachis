@@ -1,3 +1,4 @@
 MEMCACHIS - It is a web based application based on gathering and analysing all information about a particular site.
-It gives a user all sorts of  details of site like tracking number of visitors,page loading time,server details etc.
-Project is benifical in monitioring the website popularity and can be used as research tool for further studies.
+Generally when a website is opened ,the browser tranfers the visitor's information to its server.
+Memcachis helps in collecting all this information and stores it in database.It gives a owner of site all sorts of  details of site like tracking total number of visitors,number of first time visitors,visitor's identification details,page loading time,server details etc.
+Project is benifical in monitioring the visitors to site,website popularity ,changing trends in market and can be used as research tool for further studies.
