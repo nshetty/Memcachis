@@ -1,0 +1,14 @@
+   /* Run the project */
+
+1.Code runs in the Apache Web Browser.
+ The location of file is passed in browser with localhost.
+ http://localhost/[name of folder]/[file name]
+
+2.The database is stored in PHPMyAdmin.
+ http://localhost/phpmyadmin
+ Enter Username ="**********"
+ Enter Password= "**********"
+
+
+->Project won't display results untill connected to PHPMyAdmin.
+
