@@ -1,8 +1,8 @@
 <?php
-$server="localhost";
-$user="root";
-$password="namitha";
-$database="web";
+$server="*********";
+$user="**********";
+$password="**************";
+$database="name of database";
 
 $link=mysql_connect($server,$user,$password);
 if(!link)
