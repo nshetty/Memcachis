@@ -1,0 +1,38 @@
+                       MEMCACHIS
+
+Copyright(C) 2011 Namitha Shetty.
+Author : Namitha Shetty <nnshetty555@gmail.com>
+
+MEMCACHIS - It is a web based application based on gathering and analysing all information about a particular site.
+Generally when a website is opened ,the browser tranfers the visitor's information to its server.
+Memcachis helps in collecting all this information and stores it in database.It gives a owner of site all sorts of  details of site like tracking total number of visitors,number of first time visitors,visitor's identification details like Ip address,Browser,O.S,,Language,MIME types,Cookies, page loading time,server details etc.
+Project is benifical in monitioring the visitors to site,website popularity ,changing trends in market and can be used as research tool for further studies.
+
+
+Software Requirements
+1.Apache WebServer 2.0
+Apache Webserver is used to generate both static and dynamic web pages.It processes the PHP code and performs all the precribed actions and returns the result to the visitor's browser.
+Apache can be downloaded here -http://www.easy-ubuntu-linux.com/apache-ubuntu-install.html
+
+2.PHP Version 5.2.1 or above
+It is HypertextPreprocessor.It is a generalpurpose,serverside scripting language which is used to generate dynamic webpages.
+PHP can be downloaded here - http://php.net/downloads.php
+
+3.MySQL 4.1.22 or above
+It is a open-source database used to manipulate database and performs operations on the it.
+MySQl can be downloaded here -http://blog.sudobits.com/2010/10/27/how-to-install-mysql-on-ubuntu-10-10/
+
+4.PHPMyAdmin
+It is a software tool written in PHP which is used as a repository to store all the databases.Data is inserted using MySQL in a PHP file.
+PHPMyAdmin can be downloaded here -http://www.phpmyadmin.net/home_page/downloads.php
+
+
+License
+License can be obtained here - https://github.com/nshetty/Memcachis/blob/master/LICENSE
+ 
+
+Run
+Procedures to run project is found here - https://github.com/nshetty/Memcachis/blob/master/Src/run.txt
+
+
+
