@@ -1,0 +1,16 @@
+Software Requirements
+
+1.Apache WebServer 2.0  
+  Apache Webserver is used to generate both static and dynamic web pages.It processes the PHP code and performs all the precribed actions and returns the result to the   visitor's browser. 
+ 
+2.PHP Version 5.2.1 or above
+  PHP is HypertextPreprocessor.It is a generalpurpose,serverside scripting language which is used to generate dynamic webpages.
+   
+3.MySQL 4.1.22 or above
+  It is a open-source database used to manipulate database and performs operations on the it.
+
+4.PHPMyAdmin
+  It is a software tool written in PHP which is used as a repository to store all the databases.Data is inserted using MySQL in a PHP file.
+
+
+
