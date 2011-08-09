@@ -1,5 +1,9 @@
 <html>
 <?php
+/* 1.This code should be inserted in web page to collect stats about the web page */
+/* 2.Code is run in Apache web browser - http://localhost/Src/src.php */
+/* 3.Code should be connected to PHPMyadmin to store and fetch data */
+/* 4. Code gives all sorts of information about number of visitors,unique visitors,Browser,IP,O.S,language,MIME,Cookie,HTTP User Agents on daily,monthly and yearly basis and data is collected and represented in form table and bargraph */
 
 /*Page loading time*/
 
