@@ -9,6 +9,10 @@
  Enter Username ="**********"
  Enter Password= "**********"
 
+3.Run
+ http://localhost/Src/src.php
+ a.When src.php is run in browser, web stats ,monthly table ,search displays results and  gr1.php will also run to display graph.
+ b.When search is clicked,search1.php will run and when submit button is clicked search.php is run displaying all search results.
 
 ->Project won't display results untill connected to PHPMyAdmin.
 

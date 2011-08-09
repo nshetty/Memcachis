@@ -1,27 +1,20 @@
 <?php
-$server="*********";
-$user="**********";
-$password="**************";
-$database="name of database";
+$username="*******";
+$password="*********";
+$server="******";
+$database="*****";
 
-$link=mysql_connect($server,$user,$password);
-if(!link)
-{
-die('ERROR Connection');
-}
+$link1=mysql_connect($server,$username,$password);
+if(!$link1)
+echo "connection Failed"." <br/>";
 else
-echo( '  ');
+echo  "   ";
 $link2=mysql_select_db($database);
-echo ('');
 if(!$link2)
-{
-die('ERROR Database');
-}
+echo "Database Failed "." <br/>";
 else
-echo (' ');
-$link2=mysql_select_db($database);
-echo ('');
+echo "   ";
 
-mysql_close($link1);
 ?>
-
+~                                                                               
+~                           
