@@ -2,10 +2,10 @@
 /* Code to draw a  graph */
 
 /*connecting to database */
-$server="*****";
-$user="*******";
+$server="*******";
+$user="******";
 $password="*******";
-$database="******";
+$database="*******";
 
 $link=mysql_connect($server,$user,$password);
 
@@ -35,6 +35,7 @@ $link2=mysql_select_db($database);
 
  $result16 =mysql_query("SELECT * FROM visitor WHERE month LIKE '7' AND $year=Year(Current_timestamp)");
  $jul=mysql_num_rows($result16);
+
  $result17 =mysql_query("SELECT * FROM visitor WHERE month LIKE '8' AND $year=Year(Current_timestamp)");
  $aug=mysql_num_rows($result17);
 
@@ -68,15 +69,20 @@ $link2=mysql_select_db($database);
 /*graph height,width*/
 
   $img_width=450;
-  $img_height=300;
-  $margins=20;
+  $img_height=400;
+  $margins=15;
+
 /* size of graph */
- $graph_width=$img_width - $margins * 2;
- $graph_height=$img_height - $margins * 2;
+ $graph_width=$img_width - $margins * 3;
+ $graph_height=$img_height - $margins * 3;
  $img=imagecreate($img_width,$img_height);
  $bar_width=20;
- $total_bars=count($values);
- $gap= ($graph_width- $total_bars * $bar_width ) / ($total_bars +1);
+ $total=count($values);
+ $gap= ($graph_width- $total* $bar_width ) / ($total +1);
+
+/* scaling graph */
+ $max_value=max($values);
+ $ratio= $graph_height/$max_value;
 
 
  /* Colors of graph*/
@@ -91,18 +97,14 @@ $link2=mysql_select_db($database);
  imagefilledrectangle($img,$margins,$margins,$img_width-1-$margins,$img_height-1-$margins,$background_color);
 
 
-/* scaling graph */
- $max_value=max($values);
- $ratio= $graph_height/$max_value;
-
 /*   Draw the bars */
-  for($i=0;$i< $total_bars; $i++){
+  for($i=0;$i< $total; $i++){
 
-/*  key and value the current pointer position*/
+ /*  key and value the current pointer position*/
  list($key,$value)=each($values);
  $x1= $margins + $gap + $i * ($gap+$bar_width) ;
- $x2= $x1 + $bar_width;
  $y1=$margins +$graph_height- intval($value * $ratio) ;
+ $x2= $x1 + $bar_width;
  $y2=$img_height-$margins;
  imagestring($img,0,$x1+3,$y1-10,$value,$bar_color);
  imagestring($img,0,$x1+3,$img_height-15,$key,$bar_color);

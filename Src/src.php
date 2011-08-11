@@ -61,7 +61,7 @@ $result4 =mysql_query("SELECT DISTINCT addr FROM visitor where DATE(date)=DATE(N
 $count4=mysql_num_rows($result4);
 
 /* Number of visitors at this time */
-$result5=mysql_query("SELECT DISTINCT addr from visitor WHERE $month=Month(current_timestamp)");
+$result5=mysql_query("SELECT DISTINCT addr FROM visitor WHERE $month=Month(Current_timestamp)");
 $count5=mysql_num_rows($result5);
 
 /* Number of visitor in present year */
